@@ -19,7 +19,10 @@ app.use(cors());
 initializeDbConnection();
 
 app.get("/", (req, res) => {
-    res.send({"message": "Hello World! I am from heroku"});
+    res.send({
+        success: true,
+        message: "Refer to the API docs at https://github.com/harshitbadollacodes/chessTube_BE"
+    });
 });
 
 app.use("/user", user);

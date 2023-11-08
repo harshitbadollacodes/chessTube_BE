@@ -19,7 +19,7 @@ app.use(cors());
 initializeDbConnection();
 
 app.get("/", (req, res) => {
-    res.send({
+    res.json({
         success: true,
         message: "Refer to the API docs at https://github.com/harshitbadollacodes/chessTube_BE"
     });

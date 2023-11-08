@@ -3,7 +3,7 @@ const { Video } = require("../models/video.model");
 const getVideos = async (req, res) => {
     try {
         const videos = await Video.find();
-        res.json(videos);
+        res.json({ videos });
     } catch(error) {
         console.log(error);
         res.json({ success: false, message: "Error" });

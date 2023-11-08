@@ -4,15 +4,15 @@ const router = express.Router();
 const { videosData } = require("../data/initialData");
 const { Video } = require("../models/video.model");
 
-// const pushInitialVideosToDB = () => {
-//     console.log("running videos route");
-//     videosData.forEach(async (videoDetails) => {
-//         const video = new Video(videoDetails);
-//         const saveVideo = await video.save();
-//     })
-// };
+const pushInitialVideosToDB = () => {
+    console.log("running videos route");
+    videosData.forEach(async (videoDetails) => {
+        const video = new Video(videoDetails);
+        const saveVideo = await video.save();
+    })
+};
 
-// pushInitialVideosToDB();
+pushInitialVideosToDB();
 
 router.route("/").get(getVideos);
 

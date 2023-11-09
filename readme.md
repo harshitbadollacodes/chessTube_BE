@@ -3,7 +3,7 @@
 API server for videoLibrary app
 
 
-[API link](https://nameless-wave-16831.herokuapp.com/)
+[API link](https://chess-tube-be.vercel.app)
 
 Frontend source code: https://github.com/harshitbadollacodes/chess_tube
 
